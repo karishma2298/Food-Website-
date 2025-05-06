@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    margin: 20%;
+    border: 2px solid black;
+    width: 50%;
+    height: 45vh;
+}
+
+.book-table h1 {
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-top: 12px;
+    color: chocolate;
+}
+
+.book-table .fa-solid {
+    color: brown;
+}
+
+.book-table .name {
+    color: black;
+    font-weight: bold;
+    padding: 10px 34px;
+    font-size: 1rem;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.book-table .email {
+    color: black;
+    font-weight: bold;
+    padding: 10px 34px;
+    font-size: 1rem;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.book-table .date {
+    color: black;
+    font-weight: bold;
+    padding: 10px 34px;
+    font-size: 1rem;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.book-table .time {
+    color: black;
+    font-weight: bold;
+    padding: 10px 34px;
+    font-size: 1rem;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}

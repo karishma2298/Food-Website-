@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Table</title>
+    <link rel=" stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css " integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous " referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="book.css">
+
+</head>
+
+<body>
+
+    <div class="book-container">
+
+        <div class="book-table">
+
+            <h1>
+                Book Your Table
+                <i class="fa-solid fa-book"></i>
+            </h1>
+            <div class="form">
+                <form action="book.php" method="post">
+                    <div class="name">
+                        <label for="exampleInputName1" class="form-label">Name</label>
+                        <input type="name" class="form-control" id="exampleInputname" name="name">
+                    </div>
+
+                    <div class="email">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                    </div>
+                    <div class="date">
+                        <label for="exampleInputdate" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="exampleInputdate" name="date">
+                    </div>
+                    <div class="time">
+                        <label for="exampleInputtime" class="form-label">Time</label>
+                        <input type="time" class="form-control" id="exampleInputtime" name="time">
+                    </div>
+
+
+                    <input type="submit" value="Book Now!" class="booknow">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

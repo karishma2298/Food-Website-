@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(245, 232, 221);
+}
+
+.headerbar {
+    display: none;
+}
+
+.searchicon {
+    display: block;
+}
+
+.logo img {
+    height: 60px;
+    width: 80%;
+}
+
+.bar {
+    display: none;
+    font-size: 18px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 6vw;
+    background-color: rgb(248, 231, 217);
+    border-bottom: 2px solid rgb(252, 196, 125);
+    /* box-shadow: 0 2px 20px rgb(252, 125, 126); */
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+}
+
+.header ul li:hover {
+    color: rgb(211, 57, 19);
+}
+
+.nav ul li {
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.account {
+    flex: 0.1;
+}
+
+.account ul {
+    display: flex;
+    justify-content: end;
+}
+
+.account ul li {
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.bar i:hover {
+    color: rgb(253, 57, 8);
+}
+
+.search {
+    display: block;
+    width: 200px;
+    justify-content: center;
+}
+
+.search input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+.srchicon {
+    background-color: rgb(255, 210, 210);
+    display: block;
+    padding: 4px 5px;
+    cursor: pointer;
+}
+
+.home {
+    background-color: rgb(248, 232, 217);
+    padding: 0 7vw;
+}
+
+.home .Aboutus h1 {
+    color: rgb(211, 57, 19);
+    padding: 0 15px;
+    font-size: 29px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.home .Aboutus p {
+    padding: 0 15px;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.home .Aboutus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7vw;
+}
+
+.home .Aboutus img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgb(175, 141, 141);
+    margin: 0 15px;
+}
+
+.chefs h3 {
+    color: black;
+    padding: 10px 10px 15px;
+    font-size: 29px;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.chef {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    margin: 20px 0;
+    text-align: center;
+    width: 450px;
+}
+
+
+/* .chef-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 7vw;
+    flex-direction: row;
+
+} */
+
+.main_slide3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.main_slide3 .fav-head {
+    text-align: center;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.main_slide3 .fav-head h3 {
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.main_slide3 .item p {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 8px;
+    background-color: white;
+    /* font-weight: bold; */
+}
+
+.main_slide3 .fav-food {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    padding: 15px;
+    padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main_slide3 .fav-food .item {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(119, 119, 119, 0.438);
+}
+
+.main_slide3 .fav-food .item div {
+    height: 160px;
+    /* width: 120%; */
+    margin-bottom: 15px;
+    margin-left: 0;
+    align-items: center;
+}
+
+
+/* .main_slide3 .dsgn {
+    background-color: rgb(253, 214, 176);
+    height: 50%;
+    width: 90%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 10%;
+} */
+
+.golden {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.golden h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* .main_slide3 .fav-head {
+    width: 100%;
+} */
+
+
+/* 
+.main_slide3 .fav-head h1 {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 35px;
+} */
+
+.main_slide3 .fav-food .item h3 {
+    color: rgb(224, 162, 91);
+    background-color: white;
+}
+
+.main_slide3 {
+    margin-top: 100px;
+}
+
+.main_slide3 .dsgn {
+    height: 360px;
+}
+
+.main_slide3 .fav-head {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.item {
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 1px solid rgb(93, 89, 89);
+}
+
+.item img {
+    width: 180px;
+    height: 160px;
+    margin-bottom: 15px;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    align-items: center;
+    justify-content: center margin-r;
+}
+
+.footer {
+    padding-bottom: 25px;
+}
+
+.footer .footer-1 div {
+    margin: 0;
+    background-color: rgb(252, 222, 195);
+}
+
+.footer-1 .logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+    border: 3px solid black;
+}
+
+.footer {
+    padding: 60px 0;
+    border-top: 2px solid rgb(252, 196, 125);
+    background-color: rgb(252, 222, 195);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 90px;
+    width: 100%;
+}
+
+.footer div {
+    margin-bottom: 40px;
+}
+
+.footer-1 p {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px;
+    color: rgb(255, 137, 2);
+    background-color: rgb(252, 222, 195);
+}
+
+.footer-1 span {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 3px;
+    color: black;
+    font-weight: bold;
+    flex-wrap: wrap;
+    background-color: rgb(252, 222, 195);
+}
+
+.footer-2 {
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-2 h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.footer-2 img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+
+/* 
+.footer .footer-1 div {
+    margin: 0;
+}
+
+.footer div {
+    margin-bottom: 40px;
+}
+
+.footer div:nth-child {
+    margin-bottom: 0;
+}
+
+.footer {
+    padding-bottom: 25px;
+} */
+
+.story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 7vw;
+    margin-top: 50px;
+}
+
+.story h1 {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: red;
+}
+
+.para {
+    margin-top: 30px;
+    padding: 0 15px;
+    font-size: 13px;
+    font-family: 'verdana', sans-serif;
+}

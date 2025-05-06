@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <!-- <script>
+        const searchicon1 = document.querySelector('#searchicon1');
+        const srchicon1 = document.querySelector('#srchicon1');
+        const search1 = document.querySelector('#searchinput1');
+
+        searchicon1.addEventListener('click', function() {
+            search1.Style.display = 'flex';
+            searchicon1.Style.display = 'none';
+        })
+    </script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Restaurent Food Website</title>
+    <link rel=" stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css " integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous " referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="food.css">
+</head>
+
+
+<body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <section class="Sign-in">
+                <div class="Signin-container">
+                    <form>
+                        <div class="email">
+                            <label for="exampleInputEmail1" class="form-label">Enter Your Email</label>
+                            <input type="email">
+                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        </div>
+                        <div class="password">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password">
+                        </div>
+                        <!-- <div class="confirmpassword">
+                            <label for="exampleInputconfirmpassword1" class="form-label">Confirm Password</label>
+                            <input type="confirmpassword" class="form-control" id="exampleInputconfirmpassword1">
+                        </div> -->
+                        <input type="button" value="Login" class="login">
+                        <p><a href="#">Forget Password</a></p>
+
+
+                        <p class="signup">Dont't have an account?
+                            <a href="foodsignup.html" target="_blank"> Signup</a>
+                        </p>
+
+                    </form>
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <header>
+        <div class="header">
+            <div id="mySidenav" class="headerbar">
+                <div class="account">
+                    <ul>
+                        <a href="">
+                            <li>
+                                <i class="fa-solid fa-house-chimney"></i>
+                            </li>
+                        </a>
+                        <a href="www.google.com" target="_blank">
+                            <li>
+                                <i class="fa-solid fa-magnifying-glass searchicon1" id="searchicon1"></i>
+                            </li>
+                        </a>
+                        <!-- <div id="searchinput1">
+                            <input type=" search ">
+                            <i class="fa-solid fa-magnifying-glass srchicon1 "></i>
+                        </div> -->
+                        <a href=" ">
+                            <li>
+                                <i class="fa-solid fa-user "></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="nav ">
+                    <ul>
+                        <a href=" ">
+                            <li>Home</li>
+                        </a>
+                        <a href="foodabout.html">
+                            <li>About Us</li>
+                        </a>
+                        <a href="menu.html ">
+                            <li>Food Menu</li>
+                        </a>
+                        <a href="book.html ">
+                            <li>Book Table</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo ">
+                <img src="https://farinplus.ir/image/author_pic/969.jpg " alt=" ">
+            </div>
+            <div class="bar ">
+                <i class="fa-solid fa-bars " onclick="openNav()"></i>
+                <!-- <i class="fa-solid fa-xmark " id="hdcross "></i> -->
+            </div>
+            <div class="nav ">
+                <ul>
+                    <a href="food.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="foodabout.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="menu.html">
+                        <li>Food Menu</li>
+                    </a>
+                    <a href="book.html">
+                        <li>Book Table</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="account ">
+                <ul>
+                    <a href="# ">
+                        <li>
+                            <i class="fa-solid fa-house-chimney "></i>
+                        </li>
+                    </a>
+                    <div id="searchinput1" style="display: none;">
+                        <input type="search ">
+                        <!-- <i class="fa-solid fa-magnifying-glass " id="srchicon2 "></i> -->
+                    </div>
+                    <a href="# ">
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass searchicon2 " id="searchicon2 " onclick="abc() "></i>
+                        </li>
+                    </a>
+                    <a href="# ">
+                        <li>
+                            <i class="fa-solid fa-user " id="myBtn" onclick="ModalController()"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="home">
+        <div class="main_slide">
+            <div>
+                <h1>
+                    Enjoy <span> Delicious Food</span> in Your Healthy Life.
+                </h1>
+                <p>
+                    Welcome to the Berry Fresh Cafe's Web page. We are a cafe in Media PA that serves all organic and GMO free ingredients and are committed to delivering the freshest food to our customers. Our menu includes the freshest Smoothies, Sandwiches and Acai (ah-sigh-ee)
+                    bowls.
+                </p>
+                <button class="red_btn"> Visit Now <i class="fa-solid fa-arrow-right-long"></i></button>
+
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/736x/3a/d5/30/3ad530542f627baf5228e306a14ac40a.jpg">
+            </div>
+        </div>
+
+
+        <div class="food-items">
+            <div class="item">
+                <div>
+                    <img src="https://i.pinimg.com/736x/1f/e4/e9/1fe4e960ed785ec51b0c7838a45a7d71.jpg" alt="food-item">
+                </div>
+                <h3> Fresh & Nutritious Healthy Meals</h3>
+                <p> Consume some colorful fruits and vegetables. Those things provides all 27 essential vitamins and minerals , protein, essential fatty acids, carbs, fiber and phytonuutrients.</p>
+                <button class="white_btn"> See Menu</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="https://i.pinimg.com/474x/ae/0f/4b/ae0f4b51223f48d6a66a56902c645749.jpg" alt="food-item">
+                </div>
+                <h3>A french fries and delicious veg burger </h3>
+                <p> Made with toppings like spinach, tomatoes, onions, and avacado add vitamins (A, C, K), antioxidants and healthy fats.</p>
+                <button class="red_btn"> See Menu</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="https://i.pinimg.com/474x/00/54/c4/0054c4a3d66b8d9c2e29f3e88c1aa324.jpg" alt="food-item">
+                </div>
+                <h3>Veg Roll</h3>
+                <p> The ingredientswe use are natural (Organic/Non-GMO) and healthy for you so that you can care for yourself and have an active lifestyle.</p>
+                <button class="white_btn"> See Menu</button>
+            </div>
+        </div>
+
+        <div class="main_slide2">
+            <div class="foodimg">
+                <img src="https://i.pinimg.com/736x/b7/37/34/b737346e0a98e90cc1e361e4e61cb5b3.jpg" alt="food_item">
+            </div>
+            <div class="question">
+                <div>
+                    <h2>Why People Choose Us?</h2>
+                </div>
+                <div>
+                    <div class="q-ans">
+                        <div>
+                            <img src="https://i.pinimg.com/736x/a5/72/de/a572de05040508cd66e22c889ba8fa38.jpg" alt="">
+                        </div>
+                        <div>
+                            <h4>Choose your favourite</h4>
+                            <p> Every bite you take is a step toward health or disease—choose wisely. Enjoy the flavors you love the guilt of overspending.Treat yourself to delicious meals while keeping your budget in check.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="q-ans">
+                        <div>
+                            <img src="https://i.pinimg.com/474x/8a/72/8a/8a728a3d66cbdeda526f32e541ad7784.jpg" alt="">
+                        </div>
+                        <div>
+                            <h4>Choose your favourite</h4>
+                            <p> Nutrient-rich meals can reduce anxiety and improve mood.Omega-3s, antioxidants, and complex carbs support brain function.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="q-ans">
+                        <div>
+                            <img src="https://i.pinimg.com/474x/5c/4f/63/5c4f63f5c7726b46230e590530375797.jpg" alt="">
+                        </div>
+                        <div>
+                            <h4>Choose your favourite</h4>
+                            <p> A healthy diet adds more years to your life and life to your years.Balanced meals help manage weight without extreme dieting.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_slide3">
+            <div class="fav-head">
+                <h3>
+                    Our Popular Food Items
+                </h3>
+
+                <p>
+                    Margherita Deluxe, Valcano Pizza,Veg Chilli Garlic Noodles, Cheeseburger in Emily, Veg Biryani, South Indians Food, India Food Platter, Pasta Dishes, Soups & Stews, Avacado Salad OR Toast, Stuffed Bell Peppers, Veg Rolls.
+                </p>
+            </div>
+            <div class="fav-food">
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/8a/72/8a/8a728a3d66cbdeda526f32e541ad7784.jpg" alt="">
+                    </div>
+                    <h3>Indian Food platter</h3>
+                    <p>A nutritious twist on tradition — our healthy Indian thali is crafted with fresh, local ingredients and authentic flavors</p>
+                    <p class="fav-price">Rs. 150/- </p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/3c/cf/9e/3ccf9e226f2aa0f339851bbe303e80e4.jpg" alt="">
+                    </div>
+                    <h3>Veg Chilli Garlic Noodles</h3>
+                    <p>Fiery, flavorful, and full of crunch — our Veg Chilli Garlic Noodles bring the perfect Indo-Chinese kick with every bite.</p>
+                    <p class="fav-price">Rs. 70/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/aa/82/1e/aa821e2c1f6ed6b4d6c3c60be8f56155.jpg" alt="">
+                    </div>
+                    <h3>Margarita Pizza</h3>
+                    <p>Simplicity at its finest — our classic Margherita Pizza features a crisp crust, rich tomato sauce, fresh mozzarella, and fragrant basil.</p>
+                    <p class="fav-price">RS. 170/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/3c/1c/a7/3c1ca7c4c93105f16cba3cba5b1f9526.jpg" alt="">
+                    </div>
+                    <h3>Veg Healthy Soup</h3>
+                    <p>Warm, nourishing, and full of flavor — our wholesome veg soup is the perfect blend of fresh vegetables, herbs, and comfort in every spoonful.</p>
+                    <p class="fav-price">RS.55/- </p>
+                </div>
+            </div>
+            <div class="dsgn"></div>
+
+        </div>
+
+        <div class="main_slide4">
+            <div class="chef-feed">
+                <h2>
+                    Customer <span style="color: red;">Feedback</span>
+                </h2>
+                <p> Absolutely amazing experience! The food was fresh, full of flavor, and beautifully presented. I ordered the grilled salmon with garlic mash, and it was perfect. The staff was friendly, and the atmosphere was cozy and inviting. Can’t wait
+                    to come back! First time here and already planning our next visit. My kids loved the mac & cheese bites, and the staff was super accommodating with our dietary needs.Found this place online and took a chance—SO glad we did. Everything
+                    was delicious, and the online ordering was seamless.The online ordering system is super easy, and the food was ready right on time. I had the pulled pork sandwich—juicy, tender, and packed with flavor. You’ve got a loyal customer now.The
+                    vegan burger was out of this world. Juicy, satisfying, and the best plant-based patty I’ve had in years
+                </p>
+                <div class="chef-detail">
+                    <div>
+                        <img src="https://i.pinimg.com/280x280_RS/2b/a1/8a/2ba18a8591ac06647468a88802125342.jpg" alt="">
+                    </div>
+                    <div>
+                        <h6>Developer Dude</h6>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+
+                <div class="chef-vic">
+                    <div>
+                        <i class="fa-solid fa-hand-peace"></i>
+                        <h4>68</h4>
+                        <p> “Fresh, Flavorful, and Made with Love.”</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-trophy"></i>
+                        <h4>956</h4>
+                        <p> “Award-Winning Taste, Every Single Time.”</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chef">
+                <img src="https://i.pinimg.com/736x/0c/9d/e5/0c9de543d173163dc241c7f38fbe060f.jpg " alt="">
+
+            </div>
+        </div>
+        <div class="letter">
+            <div class="letter-head">
+                <h2>Subscribe <span>Newsletter</span></h2>
+            </div>
+            <div class="letter-input">
+                <div>
+                    <input type="email" placeholder="food.com">
+                </div>
+                <button class="red_btn"> Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-1">
+            <div class="logo">
+                <img src="https://yt3.googleusercontent.com/_EtAAvPL-Let2BjWC3oVeSRoSbvtrMW-T3xUKjlQzhRpWN5nFiP7Vcbyqx7bKvoOAQ39vSjp=s160-c-k-c0x00ffffff-no-rj">
+
+            </div>
+
+
+
+            <div>
+                <address>
+                    <span>Developer Dude</span>
+                    <p> Email.omjitrivedi17@gmail.com</p>
+                    <p>YouTube : Developer Dude</p>
+                    <p>Mr. Omji Trivedi 132,
+                    <br>My street, New Delhi
+                    <br>India 110006.</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR26-b54hqtzHkrcSbIc39DUhxkf3TgB55-Kw&s" alt="">
+            <h2>Powered by <em>Developer Dude</em> </h2>
+        </div>
+    </div>
+    <script src="food.js "></script>
+</body>
+
+</html>
