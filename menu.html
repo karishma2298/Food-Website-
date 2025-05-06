@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <link rel=" stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css " integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous " referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo ">
+                <img src="https://farinplus.ir/image/author_pic/969.jpg " alt=" ">
+            </div>
+            <div class="bar ">
+                <i class="fa-solid fa-bars " onclick="openNav()"></i>
+                <!-- <i class="fa-solid fa-xmark " id="hdcross "></i> -->
+            </div>
+            <div class="nav ">
+                <ul>
+                    <a href="food.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="foodabout.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="menu.html">
+                        <li>Food Menu</li>
+                    </a>
+                    <a href="book.html">
+                        <li>Book Table</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="account ">
+                <ul>
+                    <a href="# ">
+                        <li>
+                            <i class="fa-solid fa-house-chimney "></i>
+                        </li>
+                    </a>
+                    <div id="searchinput1" style="display: none;">
+                        <input type="search ">
+                        <!-- <i class="fa-solid fa-magnifying-glass " id="srchicon2 "></i> -->
+                    </div>
+                    <a href="# ">
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass searchicon2 " id="searchicon2 " onclick="abc() "></i>
+                        </li>
+                    </a>
+                    <a href="# ">
+                        <li>
+                            <i class="fa-solid fa-user " id="user "></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main_slide3">
+            <div class="fav-head">
+                <h3>
+                    Food Menu
+                </h3>
+
+
+            </div>
+            <div class="fav-food">
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/8a/72/8a/8a728a3d66cbdeda526f32e541ad7784.jpg" alt="">
+                    </div>
+                    <h3>Indian Food </h3>
+                    <p>A journey of spices, flavors, and colors—Indian food is a feast for all senses. </p>
+                    <p style="color: red; font-weight: bold;">RS. 150/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/09/17/17/09171768566c2d9dab6c8ddb203e06ac.jpg" alt="">
+                    </div>
+                    <h3> Flavourful salads</h3>
+                    <p>A burst of freshness in every bite—this salad dances with zesty citrus, crunchy greens, and a hint of herbed magic. </p>
+                    <p style="color: red; font-weight: bold;">RS. 50/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/02/a0/4f/02a04f553bcf8577cc97d3530daa0826.jpg" alt="">
+                    </div>
+                    <h3>Veg Biryaani </h3>
+                    <p>Fragrant, fiery, and full of soul—every grain of this veg biryani tells a delicious story. </p>
+                    <p style="color: red; font-weight: bold;">RS. 70/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/0c/18/ad/0c18ad8b3db57d37d37cdbde465c5cb2.jpg" alt="">
+                    </div>
+                    <h3>Veg Noodles </h3>
+                    <p>Bold flavors, vibrant colors—these veg noodles bring the street food vibe home. </p>
+                    <p style="color: red; font-weight: bold;">RS. 60/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/48/ab/5a/48ab5a2347df8a73aec060abb87ae6aa.jpg" alt="">
+                    </div>
+                    <h3>Tandoori Momos </h3>
+                    <p>Smoky, spicy, and straight from the tandoor—momos with a bold makeover. </p>
+                    <p style="color: red; font-weight: bold;">RS. 80/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/ab/e6/57/abe65721a6d06545c99230151aab0177.jpg" alt="">
+                    </div>
+                    <h3>Margherita Pizza </h3>
+                    <p>Simplicity at its most delicious—Margherita magic in every bite. </p>
+                    <p style="color: red; font-weight: bold;">RS. 170/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/b7/8b/65/b78b65d7f88b1930e339a3ca1a6d96cb.jpg" alt="">
+                    </div>
+                    <h3>South Indian Food Platter</h3>
+                    <p>South Indian bliss—where every dish is a celebration of taste and tradition. </p>
+                    <p style="color: red; font-weight: bold;">RS. 140/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/5c/4f/63/5c4f63f5c7726b46230e590530375797.jpg" alt="">
+                    </div>
+                    <h3>Crispy Masala Dosa </h3>
+                    <p>Golden, crispy, and stuffed with spiced potato goodness—masala dosa at its finest. </p>
+                    <p style="color: red; font-weight: bold;">RS. 90/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/3c/1c/a7/3c1ca7c4c93105f16cba3cba5b1f9526.jpg" alt="">
+                    </div>
+                    <h3> Veg Healthy soup </h3>
+                    <p>Fresh veggies, gentle spices, and feel-good vibes in every sip. </p>
+                    <p style="color: red; font-weight: bold;">RS. 55/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/00/54/c4/0054c4a3d66b8d9c2e29f3e88c1aa324.jpg" alt="">
+                    </div>
+                    <h3>Veg roll </h3>
+                    <p>One roll, endless flavor—your favorite veggies with a street-food twist. </p>
+                    <p style="color: red; font-weight: bold;">RS. 40/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/e7/08/c5/e708c5d5e87d68784ae6bee56cdfd76c.jpg" alt="">
+                    </div>
+                    <h3>Fruits Salad </h3>
+                    <p>A colorful burst of nature’s sweetness—this fruit salad is sunshine in a bowl. </p>
+                    <p style="color: red; font-weight: bold;">RS. 60/-</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="https://i.pinimg.com/474x/ae/0f/4b/ae0f4b51223f48d6a66a56902c645749.jpg" alt="">
+                    </div>
+                    <h3>Delicious Veg Burger </h3>
+                    <p>Veggie-packed, sauce-drizzled, and all-around delicious—this burger is a plant-based dream. </p>
+                    <p style=" color: red; font-weight: bold;">RS. 99/-</p>
+                </div>
+
+
+
+            </div>
+            <div class="footer ">
+                <div class="footer-1 ">
+                    <div class="logo ">
+                        <img src="https://yt3.googleusercontent.com/_EtAAvPL-Let2BjWC3oVeSRoSbvtrMW-T3xUKjlQzhRpWN5nFiP7Vcbyqx7bKvoOAQ39vSjp=s160-c-k-c0x00ffffff-no-rj ">
+
+                    </div>
+                    <div>
+                        <address>
+                                <span>Developer Dude</span>
+                                <p> Email.omjitrivedi17@gmail.com</p>
+                                <p>YouTube : Developer Dude</p>
+                                <p>Mr. Omji Trivedi 132,
+                                <br>My street, New Delhi
+                                <br>India 110006.</p>
+                            </address>
+                    </div>
+                </div>
+                <div class="footer-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR26-b54hqtzHkrcSbIc39DUhxkf3TgB55-Kw&s " alt=" ">
+                    <h2>Powered by <em>Developer Dude</em> </h2>
+                </div>
+            </div>
+
+
+    </header>
+</body>
+
+</html>
