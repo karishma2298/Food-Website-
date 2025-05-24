@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(248, 231, 217);
+}
+
+body::before {
+    content: "BERRY FRESH CAFE!";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-weight: 50px;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 60px;
+    color: rgb(193, 65, 10, 0.15);
+    pointer-events: none;
+    z-index: 9999;
+    white-space: nowrap;
+    user-select: none;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(180, 48, 16);
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.para p {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.why span {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 10px;
+    line-height: 1.8;
+}
+
+.experience span {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.miss span {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 10px;
+    line-height: 1.8;
+}
+
+.miss p {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.food p {
+    font-size: 20px;
+    color: black;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.near p {
+    font-size: 20px;
+    color: black;
+    /* text-align: center; */
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.suggestions p {
+    font-size: 20px;
+    color: black;
+    /* text-align: center; */
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.suggestions span {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 10px;
+    line-height: 1.8;
+}
+
+.ready p {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 10px;
+    line-height: 1.8;
+}
+
+.footer {
+    background-color: rgb(235, 189, 136);
+}
+
+.footer h1 {
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 10px;
+}
+
+.footer p {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 10px;
+    line-height: 1.8;
+}
+
+.footer .red_btn {
+    background-color: rgb(180, 48, 16);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px auto;
+    margin-left: 20px;
+}
+
+.red_btn:hover {
+    background-color: rgb(150, 40, 10);
+}
